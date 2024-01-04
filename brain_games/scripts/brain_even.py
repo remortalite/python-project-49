@@ -1,5 +1,5 @@
-from brain_games.scripts.game_utils import (get_name,
-                                            get_answer, is_answer_correct)
+from brain_games.scripts.game_utils import get_name, greet_user, \
+    get_answer, is_answer_correct, print_end_message
 
 from random import randint
 
@@ -29,11 +29,8 @@ def is_win_even_game() -> bool:
 def main():
     print("Welcome to the Brain Games!")
     name = get_name()
-    print(f"Hello, {name}!")
-    if is_win_even_game():
-        print(f"Congratulations, {name}!")
-    else:
-        print(f"Let's try again, {name}!")
+    greet_user(name)
+    print_end_message(is_win_even_game(), name)
 
 
 if __name__ == "__main__":
