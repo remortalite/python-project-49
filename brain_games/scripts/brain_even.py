@@ -1,4 +1,6 @@
-import prompt
+from brain_games.scripts.game_utils import (get_name,
+                                            get_answer, is_answer_correct)
+
 from random import randint
 
 
@@ -6,16 +8,11 @@ def even_game_step() -> bool:
     start_number = 1
     end_number = 100
     print("Answer \"yes\" if the number is even, otherwise answer \"no\".")
-    question_number = randint(start_number, end_number)
-    print(f"Question: {question_number}")
-    correct_answer = "no" if question_number % 2 else "yes"
-    answer = prompt.string("Your answer:  ")
-    if answer.strip() != correct_answer:
-        print(f"'{answer}' is wrong answer ;(. "
-              f"Correct answer was '{correct_answer}'.")
-        return False
-    print("Correct!")
-    return True
+    question = randint(start_number, end_number)
+    print(f"Question: {question}")
+    correct_answer = "no" if question % 2 else "yes"
+    user_answer = get_answer()
+    return is_answer_correct(user_answer, correct_answer)
 
 
 def is_win_even_game() -> bool:
@@ -31,7 +28,7 @@ def is_win_even_game() -> bool:
 
 def main():
     print("Welcome to the Brain Games!")
-    name = prompt.string("May I have your name? ")
+    name = get_name()
     print(f"Hello, {name}!")
     if is_win_even_game():
         print(f"Congratulations, {name}!")
