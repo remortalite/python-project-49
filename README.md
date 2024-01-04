@@ -4,4 +4,10 @@
 
 Example:
 
-[![asciicast](https://asciinema.org/a/629833.svg)](https://asciinema.org/a/629833)
+# Game `brain-even`
+
+[![asciicast](https://asciinema.org/a/GEFf0CCSj8sMISAXFZ7PnYYjW.svg)](https://asciinema.org/a/GEFf0CCSj8sMISAXFZ7PnYYjW)
+
+# Game `brain-calc`
+
+[![asciicast](https://asciinema.org/a/YIy5voxvo3B9r8fYt98y2n4Te.svg)](https://asciinema.org/a/YIy5voxvo3B9r8fYt98y2n4Te)
