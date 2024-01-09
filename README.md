@@ -16,5 +16,9 @@ Example:
 
 [![asciicast](https://asciinema.org/a/bPvvct1coQ0sIvVThRrlBVBPh.svg)](https://asciinema.org/a/bPvvct1coQ0sIvVThRrlBVBPh)
 
+# Game `brain-progression`
+
+[![asciicast](https://asciinema.org/a/RwKtGhen1UDPFR8SMM36qL3nE.svg)](https://asciinema.org/a/RwKtGhen1UDPFR8SMM36qL3nE)
+
 # Game `brain-prime`
 [![asciicast](https://asciinema.org/a/SVUDhesYwesNozVaXRhYEZTYX.svg)](https://asciinema.org/a/SVUDhesYwesNozVaXRhYEZTYX)
