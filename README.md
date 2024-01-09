@@ -15,3 +15,6 @@ Example:
 # Game `brain-gcd`
 
 [![asciicast](https://asciinema.org/a/bPvvct1coQ0sIvVThRrlBVBPh.svg)](https://asciinema.org/a/bPvvct1coQ0sIvVThRrlBVBPh)
+
+# Game `brain-prime`
+[![asciicast](https://asciinema.org/a/SVUDhesYwesNozVaXRhYEZTYX.svg)](https://asciinema.org/a/SVUDhesYwesNozVaXRhYEZTYX)

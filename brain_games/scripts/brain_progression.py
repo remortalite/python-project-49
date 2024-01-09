@@ -19,7 +19,7 @@ def get_progression(size: int) -> list[int]:
 
 
 def censor_progression(progression: list[int]) -> (list[int], int):
-    rand_idx = randint(0, len(progression))
+    rand_idx = randint(0, len(progression) - 1)
     correct_el = progression[rand_idx]
     progression[rand_idx] = None
     return progression, correct_el
