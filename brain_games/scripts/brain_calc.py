@@ -29,7 +29,7 @@ def run_game() -> bool:
         expr, correct_answer = get_random_expression()
 
         print("What is the result of the expression?")
-        print("Question: ", expr)
+        print("Question:", expr)
 
         user_answer = get_answer()
         result = is_answer_correct(user_answer, correct_answer)
