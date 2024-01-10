@@ -1,12 +1,17 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Several mini games to check your math and train your brain"
 authors = ["Rem <morrig407@gmail.com>"]
 readme = "README.md"
 packages = [
   { include = "brain_games" },
 ]
+classifiers = [
+	"Programming Language :: Python" ,
+	"Topic :: Games/Entertainment :: Puzzle Games"
+]
+repository = "https://github.com/remortalite/python-project-49"
 
 [tool.poetry.dependencies]
 python = "^3.11"
