@@ -3,6 +3,7 @@ from random import randint
 
 DESCRIPTION = "Find the greatest common divisor of given numbers."
 
+
 def find_gcd(a: int, b: int) -> int:
     if b == 0:
         return a

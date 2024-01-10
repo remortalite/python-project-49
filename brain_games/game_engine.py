@@ -3,6 +3,7 @@ from brain_games.scripts import utils
 
 TRY_NUMBER = 3
 
+
 def game_step(game):
 
     question, answer = game.get_question_and_answer()
@@ -18,7 +19,7 @@ def game_step(game):
 
 def is_win(game) -> bool:
     for _ in range(TRY_NUMBER):
-        if not game_step(game):  
+        if not game_step(game):
             return False
     return True
 
