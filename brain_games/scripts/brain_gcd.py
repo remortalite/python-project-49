@@ -18,7 +18,7 @@ def gcd_game_step() -> bool:
     print("Find the greatest common divisor of given numbers.")
     question: (int, int) = (randint(start_number, end_number),
                             randint(start_number, end_number))
-    print(f"Question: {question}")
+    print(f"Question: {question[0] question[1]}")
     correct_answer = find_gcd(*question)
     user_answer = get_answer()
     return is_answer_correct(user_answer, correct_answer)
