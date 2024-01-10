@@ -20,7 +20,7 @@ def run_game() -> bool:
         rand_min = 2
         rand_max = 100
         random_number = randint(rand_min, rand_max)
-        print("Question: ", random_number)
+        print("Question:", random_number)
 
         user_answer = get_answer()
         result = is_answer_correct(user_answer,
