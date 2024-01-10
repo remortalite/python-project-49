@@ -6,8 +6,8 @@ PROGRESSION_SIZE = 10
 
 
 def get_progression(size: int) -> list[int]:
-    rand_min = 0
-    rand_max = 20
+    rand_min = 1
+    rand_max = 10
     start_number = randint(rand_min, rand_max)
     interval = randint(rand_min, rand_max)
 
@@ -29,7 +29,7 @@ def censor_progression(progression: list[int]) -> (list[int], int):
 def get_str_progression(progression: list[int]) -> str:
     line = ""
     for el in progression:
-        if el:
+        if el is not None:
             line += str(el) + " "
         else:
             line += ".. "
