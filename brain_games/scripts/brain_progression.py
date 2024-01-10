@@ -48,7 +48,7 @@ def run_game() -> bool:
 
         size = 10
         progression, correct_answer = make_progression(size)
-        print("Question: ", progression)
+        print("Question:", progression)
 
         user_answer = get_answer()
         result = is_answer_correct(user_answer, correct_answer)
