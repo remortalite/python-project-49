@@ -4,7 +4,7 @@ from random import randint, choice
 DESCRIPTION = "What is the result of the expression?"
 
 
-def get_random_expression() -> (str, str):
+def get_random_expression():
     """ Returns: (expression, result) """
     start_number = 0
     end_number = 100
@@ -23,5 +23,5 @@ def get_random_expression() -> (str, str):
             str(result))
 
 
-def get_question_and_answer() -> (str, int):
+def get_question_and_answer():
     return get_random_expression()

@@ -5,14 +5,14 @@ DESCRIPTION = "What number is missing in the progression?"
 PROGRESSION_SIZE = 10
 
 
-def censor_progression(progression: list[int]) -> (list[int], int):
+def censor_progression(progression):
     rand_idx = randint(0, len(progression) - 1)
     correct_el = progression[rand_idx]
     progression[rand_idx] = None
     return progression, correct_el
 
 
-def make_progression() -> (str, int):
+def make_progression():
     rand_min = 1
     rand_max = 10
     rand_start = randint(rand_min, rand_max)
@@ -25,5 +25,5 @@ def make_progression() -> (str, int):
     return line, correct_el
 
 
-def get_question_and_answer() -> (str, int):
+def get_question_and_answer():
     return make_progression()
