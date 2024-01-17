@@ -1,5 +1,7 @@
 from brain_games.scripts import utils
 
+import prompt
+
 
 TRY_NUMBER = 3
 
@@ -10,7 +12,7 @@ def game_step(game):
 
     print("Question:", question)
 
-    user_answer = utils.get_answer()
+    user_answer = prompt.string("Your answer: ")
     result = utils.is_answer_correct(user_answer, answer)
     if result:
         return True
@@ -25,10 +27,13 @@ def is_win(game) -> bool:
 
 
 def run(game):
-    name = utils.get_name()
-    utils.greet_user(name)
+    name = prompt.string("May I have your name? ")
+    print(f"Hello, {name}!")
 
     print(game.DESCRIPTION)
 
     result = is_win(game)
-    utils.print_end_message(result, name)
+    if result:
+        print(f"Congratulations, {name}!")
+    else:
+        print(f"Let's try again, {name}!")
