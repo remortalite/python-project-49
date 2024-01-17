@@ -1,5 +1,3 @@
-from brain_games.scripts import utils
-
 import prompt
 
 
@@ -21,9 +19,11 @@ def run(game):
         print("Question:", question)
         user_answer = prompt.string("Your answer: ")
 
-        result = utils.is_answer_correct(user_answer, answer)
+        result = str(user_answer).strip() == str(answer).strip()
 
         if not result:
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{answer}'.")
             break
 
     if result:
