@@ -5,7 +5,7 @@ DESCRIPTION = "What number is missing in the progression?"
 PROGRESSION_SIZE = 10
 
 
-def make_progression():
+def get_question_and_answer():
     rand_min = 1
     rand_max = 10
     rand_start = randint(rand_min, rand_max)
@@ -19,7 +19,3 @@ def make_progression():
     progression[rand_idx] = ".."
     line = " ".join(list(map(str, progression)))
     return line, correct_el
-
-
-def get_question_and_answer():
-    return make_progression()
