@@ -24,9 +24,7 @@ def run(game):
         if not result:
             print(f"'{user_answer}' is wrong answer ;(. "
                   f"Correct answer was '{answer}'.")
+            print(f"Let's try again, {name}!")
             break
-
-    if result:
-        print(f"Congratulations, {name}!")
     else:
-        print(f"Let's try again, {name}!")
+        print(f"Congratulations, {name}!")
