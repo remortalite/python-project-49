@@ -12,13 +12,13 @@ The repository contains several mini games to play with your math skills.
 
 Clone the repository and install using Makefile:
 
-`
+```
 git clone https://github.com/remortalite/python-project-49.git
 
 cd python-project-49/
 
 make install build publish package-install
-`
+```
 
 ### Examples:
 
