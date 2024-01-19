@@ -5,12 +5,12 @@ TRY_NUMBER = 3
 
 
 def run(game):
+    print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
 
     print(game.DESCRIPTION)
 
-    result = None
     # run several times
     for _ in range(TRY_NUMBER):
 
